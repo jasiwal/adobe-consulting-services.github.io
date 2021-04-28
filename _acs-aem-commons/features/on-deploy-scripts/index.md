@@ -6,6 +6,7 @@ date: 2018-04-05
 redirect_from: /acs-aem-commons/features/on-deploy-scripts.html 
 feature-tags: administration backend-dev content-migration
 initial-release: 3.15.0
+tags: aemcs-incompatible
 ---
 
 ## Purpose
@@ -39,7 +40,13 @@ with all nodes - e.g. `postal | zip | zipcode` -> `postalcode`
 - Creation of the initial site structure
 - Creation of content meant for local developer environments only
 
-### Why use this tool?
+### Patch System by Jetpack Add-on
+
+[Patch System by Jetpack](https://jetpack.ida-mediafoundry.io/tools/patch-system.html) is a cool add-on that builds on top of On-Deploy scripts! It's not part of ACS AEM Commons, but if you use On-Deploy Scripts definitely check it out!
+
+![Patch System by Jetpack](https://jetpack.ida-mediafoundry.io/images/patch-system.png)
+
+### Why use On-Deploy Scripts?
 
 There are other tools out there that allow you to run ad-hoc scripts against your AEM instance manually, but this
 method is fully automated. An automated approach provides many key benefits.
@@ -68,7 +75,7 @@ activated/published. This can be a big deal for mass content updates.
 - Script run status is preserved within AEM, giving an easy way to determine if a script has already been run on a
 given server.
 
-## How to Use
+## How to Use On-Deply Scripts
 
 1. Enable the On-Deploy Scripts Feature
 1. Implement a Script Provider Service
